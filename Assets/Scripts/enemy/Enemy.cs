@@ -9,7 +9,11 @@ public class Enemy : MonoBehaviour, IBehaviour
 
     public Transform SpawnPos;
     public Transform EndPos;
+    
+    [HideInInspector]
     public Transform PlayerPos;
+
+    public GameObject Bullet;
 
     public float MovementSpeed = 1.0f;
 
@@ -19,6 +23,13 @@ public class Enemy : MonoBehaviour, IBehaviour
         PlayerPos = GameObject.FindWithTag("Player").transform;
 
         States = new Dictionary<StateType, State>();
+    }
+
+    public void ShootBullet(Vector3 pos)
+    {
+        Vector3 dir = (pos - transform.position).normalized;
+        Quaternion q = Quaternion.LookRotation(dir);
+        GameObject b = Instantiate(Bullet, transform.position, q);
     }
 
     private void Update()

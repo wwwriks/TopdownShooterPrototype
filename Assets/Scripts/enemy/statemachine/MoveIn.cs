@@ -19,7 +19,7 @@ public class MoveIn : State
 
     public override void Update(float deltaTime)
     {
-        if (_elapsedTime >= 1.0f) ToState(StateType.MOVE_PLAYER);
+        if (_elapsedTime >= 1.0f) ToState(StateType.IDLE);
         _enemy.transform.position = Vector3.Lerp(_lastPoint, _currentPoint, _elapsedTime);
         _elapsedTime += (_enemy.MovementSpeed * deltaTime) / Vector3.Distance(_lastPoint, _currentPoint);
     }
