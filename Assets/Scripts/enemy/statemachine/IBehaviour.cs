@@ -9,7 +9,9 @@ public enum StateType
     SHOOT,
     MOVE_IN,
     MOVE_OUT,
-    MOVE_PLAYER
+    MOVE_PLAYER,
+    BOSS_MOVE_IN,
+    BOSS_IDLE
 }
 
 public interface IBehaviour

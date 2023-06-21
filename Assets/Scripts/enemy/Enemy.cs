@@ -34,6 +34,9 @@ public class Enemy : MonoBehaviour, IBehaviour
 
     private void Update()
     {
+        if (transform.position.x < -20.0f || transform.position.x > 20.0f
+            || transform.position.y < -20.0f || transform.position.y > 20.0f
+            || transform.position.z < -10.0f || transform.position.z > 40.0f) Destroy(this.gameObject);
         CurrentState.Update(Time.deltaTime);
     }
 }
