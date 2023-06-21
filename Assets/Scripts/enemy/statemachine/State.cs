@@ -16,7 +16,12 @@ public abstract class State
 
     public virtual void Enter(){}
     protected virtual void Exit(){}
-    protected virtual void NextState(){}
+    protected virtual void ToState(StateType st)
+    {
+        this.Exit();
+        _behaviour.CurrentState = _behaviour.States[st];
+        _behaviour.CurrentState.Enter();
+    }
 
     public virtual void Update(float deltaTime){}
 }
