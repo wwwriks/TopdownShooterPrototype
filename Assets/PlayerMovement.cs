@@ -31,11 +31,11 @@ public class PlayerMovement : MonoBehaviour
         RaycastHit hit;
         if(Physics.Raycast(aim.AimRay, out hit, 100))
         {
-            characterFace.transform.LookAt(hit.point);
+            //characterFace.transform.LookAt(hit.point);
         }
         else
         {
-            characterFace.transform.LookAt(aim.AimRay.origin + aim.AimRay.direction * 10);
+            //characterFace.transform.LookAt(aim.AimRay.origin + aim.AimRay.direction * 10);
         }
     }
 
