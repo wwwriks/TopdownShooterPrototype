@@ -6,8 +6,12 @@ using UnityEngine;
 public enum StateType
 {
     IDLE,
-    STAND,
-    WALK,
+    SHOOT,
+    MOVE_IN,
+    MOVE_OUT,
+    MOVE_PLAYER,
+    BOSS_MOVE_IN,
+    BOSS_IDLE
 }
 
 public interface IBehaviour
