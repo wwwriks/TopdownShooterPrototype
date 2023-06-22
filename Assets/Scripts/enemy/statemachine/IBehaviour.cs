@@ -11,7 +11,9 @@ public enum StateType
     MOVE_OUT,
     MOVE_PLAYER,
     BOSS_MOVE_IN,
-    BOSS_IDLE
+    BOSS_IDLE,
+    BOSS_SUB_SHOOT,
+    BOSS_SUB_WAIT
 }
 
 public interface IBehaviour

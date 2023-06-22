@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour, IBehaviour
     public State CurrentState {get; set;}
     public Dictionary<StateType, State> States {get; set;}
 
+    [HideInInspector]
     public Transform SpawnPos;
     public Transform EndPos;
     
@@ -19,7 +20,7 @@ public class Enemy : MonoBehaviour, IBehaviour
 
     private void Awake()
     {
-        transform.position = SpawnPos.position;
+        SpawnPos = transform;
         PlayerPos = GameObject.FindWithTag("Player").transform;
 
         States = new Dictionary<StateType, State>();

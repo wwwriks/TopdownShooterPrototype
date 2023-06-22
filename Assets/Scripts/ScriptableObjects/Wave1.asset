@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13bfe93268ab4ad4d8c92e61f6c85bf2, type: 3}
+  m_Name: Wave1
+  m_EditorClassIdentifier: 
+  Enemies:
+  - {fileID: 5299527834974354346, guid: 1fb89434bb094fe438a46f48dbae94dc, type: 3}
+  - {fileID: 5299527834974354346, guid: 1fb89434bb094fe438a46f48dbae94dc, type: 3}
+  - {fileID: 5299527834974354346, guid: 1fb89434bb094fe438a46f48dbae94dc, type: 3}
+  - {fileID: 5299527834974354346, guid: 1fb89434bb094fe438a46f48dbae94dc, type: 3}
+  - {fileID: 5299527834974354346, guid: 1fb89434bb094fe438a46f48dbae94dc, type: 3}
+  SpawnPos: {fileID: 8156073051930237858, guid: cb929164a19996348931b54f976c63ec, type: 3}
+  EndPos: {fileID: 1541478177085133293, guid: 76bf01e847d6d57479b50cd073d0b928, type: 3}
+  SpawnDelay: 0.5
+  WaveDelay: 5
