@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float speedSmoothing = 1;
     private Vector3 velocity;
     [SerializeField] private Vector2 bounds;
+    [SerializeField] private float rotationSpeed;
 
     [SerializeField] private GameObject characterFace = null;
     [SerializeField] private PlayerAimCrosshair aim;
@@ -19,7 +20,6 @@ public class PlayerMovement : MonoBehaviour
     {
         input = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0);
         input.Normalize();
-        //transform.position += input * speed * Time.deltaTime;'
         transform.position = Vector3.SmoothDamp(transform.position, transform.position + input * speed, ref velocity, speedSmoothing);
 
         KeepInBounds();
@@ -28,15 +28,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void CharacterTurn()
     {
-        RaycastHit hit;
-        if(Physics.Raycast(aim.AimRay, out hit, 100))
-        {
-            //characterFace.transform.LookAt(hit.point);
-        }
-        else
-        {
-            //characterFace.transform.LookAt(aim.AimRay.origin + aim.AimRay.direction * 10);
-        }
+        var rot = Quaternion.LookRotation(aim.FinalAim, Vector3.up);
+        transform.rotation = Quaternion.Lerp(transform.rotation, rot, rotationSpeed * Time.deltaTime);
     }
 
     private void KeepInBounds()

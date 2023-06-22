@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 53192883}
   - component: {fileID: 53192885}
   - component: {fileID: 53192884}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EventSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 112665776}
   - component: {fileID: 112665777}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -244,6 +244,9 @@ MonoBehaviour:
   character: {fileID: 470922517}
   bullet: {fileID: 359624780851175019, guid: 44cb5da0b1c29ba42b92ea8aac401737, type: 3}
   distance: 25
+  stuffYouCanAimAt:
+    serializedVersion: 2
+    m_Bits: 51
 --- !u!1 &154404881
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,7 +454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 470922518}
   - component: {fileID: 470922519}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Character
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -488,7 +491,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   speedSmoothing: 0.75
-  bounds: {x: 5, y: 4}
+  bounds: {x: 5, y: 3.5}
+  rotationSpeed: 5
   characterFace: {fileID: 1522009382}
   aim: {fileID: 112665777}
   camera: {fileID: 379910647}
@@ -608,35 +612,13 @@ GameObject:
   - component: {fileID: 765983560}
   - component: {fileID: 765983559}
   - component: {fileID: 765983558}
-  - component: {fileID: 765983557}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: identifier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &765983557
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 765983556}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &765983558
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -912,7 +894,7 @@ GameObject:
   - component: {fileID: 1267708625}
   - component: {fileID: 1267708627}
   - component: {fileID: 1267708626}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -937,7 +919,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1267708626
 MonoBehaviour:
@@ -952,7 +934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9339623, g: 0.109255925, b: 0.109255925, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -989,7 +971,7 @@ GameObject:
   - component: {fileID: 1522009386}
   - component: {fileID: 1522009385}
   - component: {fileID: 1522009384}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1094,7 +1076,7 @@ GameObject:
   - component: {fileID: 1813785222}
   - component: {fileID: 1813785221}
   - component: {fileID: 1813785220}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1152,10 +1134,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

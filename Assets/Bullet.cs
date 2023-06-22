@@ -13,7 +13,8 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        //Enemy enemy = collision.transform.GetComponent<Enemy>();
-        //Destroy(gameObject);
+        Enemy enemy = collision.transform.GetComponent<Enemy>();
+        //enemy?.
+        Destroy(gameObject);
     }
 }
