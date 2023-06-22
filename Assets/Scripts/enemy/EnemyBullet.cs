@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class EnemyBullet : MonoBehaviour
 {
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player")) ;//Player Take Damage
+    }
     private void Update()
     {
         if (transform.position.x < -20.0f || transform.position.x > 20.0f

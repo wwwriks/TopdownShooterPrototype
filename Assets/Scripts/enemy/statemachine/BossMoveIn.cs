@@ -15,6 +15,12 @@ public class BossMoveIn : State
         _lastPoint = _currentPoint;
         _currentPoint = _enemy.EndPos.position;
         _elapsedTime = 0.0f;
+        _enemy.Invincible = true;
+    }
+
+    protected override void Exit()
+    {
+        _enemy.Invincible = false;
     }
 
     public override void Update(float deltaTime)

@@ -11,10 +11,10 @@ public class Bullet : MonoBehaviour
         transform.position += transform.forward * speed * Time.deltaTime;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
         Enemy enemy = collision.transform.GetComponent<Enemy>();
-        //enemy?.
+        enemy?.TakeDamage();
         Destroy(gameObject);
     }
 }
