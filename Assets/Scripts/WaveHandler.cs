@@ -32,8 +32,8 @@ public class WaveHandler : MonoBehaviour
         _spawnTimer += Time.deltaTime;
         if (_spawnTimer >= Waves[_index].SpawnDelay)
         {
-            Enemy e = Instantiate(Waves[_index].Enemies[_enemyIndex], Waves[_index].SpawnPos.position, Quaternion.identity);
-            e.EndPos = Waves[_index].EndPos;
+            Enemy e = Instantiate(Waves[_index].Enemies[_enemyIndex], Waves[_index].SpawnPos[_enemyIndex].position, Quaternion.identity);
+            e.EndPos = Waves[_index].EndPos[_enemyIndex];
             _spawnTimer = 0.0f;
             _enemyIndex++;
             if (_enemyIndex >= Waves[_index].Enemies.Length)

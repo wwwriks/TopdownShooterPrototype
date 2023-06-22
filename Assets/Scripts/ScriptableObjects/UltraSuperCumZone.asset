@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13bfe93268ab4ad4d8c92e61f6c85bf2, type: 3}
   m_Name: UltraSuperCumZone
   m_EditorClassIdentifier: 
-  Enemies: []
-  SpawnPos: {fileID: 0}
-  EndPos: {fileID: 0}
+  Enemies:
+  - {fileID: 0}
+  - {fileID: 0}
+  SpawnPos:
+  - {fileID: 0}
+  EndPos:
+  - {fileID: 0}
   SpawnDelay: 0.1
   WaveDelay: 5
