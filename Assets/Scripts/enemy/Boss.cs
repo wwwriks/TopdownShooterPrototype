@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Boss : Enemy
 {
@@ -10,5 +11,9 @@ public class Boss : Enemy
         States[StateType.BOSS_IDLE] = new BossIdle(this, this);
         CurrentState = States[StateType.BOSS_MOVE_IN];
         CurrentState.Enter();
+    }
+    protected override void OnDeath()
+    {
+        SceneManager.LoadScene("End");
     }
 }

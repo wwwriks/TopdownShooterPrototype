@@ -27,12 +27,24 @@ public class Enemy : MonoBehaviour, IBehaviour
         States = new Dictionary<StateType, State>();
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        Player player = other.transform.GetComponent<Player>();
+        player?.TakeDamage();
+    }
+
+    protected virtual void OnDeath(){}
+
     public void TakeDamage()
     {
         if (Invincible) return;
         Debug.Log(Health);
         Health--;
-        if (Health <= 0) Destroy(this.gameObject);
+        if (Health <= 0)
+        {
+            OnDeath();
+            Destroy(this.gameObject);
+        }
     }
 
     public void ShootBullet(Vector3 pos)

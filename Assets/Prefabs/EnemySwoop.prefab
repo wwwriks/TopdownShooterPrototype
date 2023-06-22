@@ -122,5 +122,6 @@ MonoBehaviour:
   EndPos: {fileID: 0}
   PlayerPos: {fileID: 0}
   Bullet: {fileID: 0}
+  Invincible: 0
   MovementSpeed: 5
-  Health: 10
+  Health: 3

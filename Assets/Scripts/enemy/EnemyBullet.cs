@@ -6,7 +6,8 @@ public class EnemyBullet : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player")) ;//Player Take Damage
+        Player player = other.transform.GetComponent<Player>();
+        player?.TakeDamage();
     }
     private void Update()
     {

@@ -321,6 +321,10 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 619897576}
+    - target: {fileID: 7573221400341695061, guid: df136d5b5e845e743a5e1dcb62c850a9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8668993593248036115, guid: df136d5b5e845e743a5e1dcb62c850a9, type: 3}
       propertyPath: m_Name
       value: Player
@@ -372,7 +376,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7314442837059377103, guid: df136d5b5e845e743a5e1dcb62c850a9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1407145972}
+    - targetCorrespondingSourceObject: {fileID: 7314442837059377103, guid: df136d5b5e845e743a5e1dcb62c850a9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1407145973}
   m_SourcePrefab: {fileID: 100100000, guid: df136d5b5e845e743a5e1dcb62c850a9, type: 3}
 --- !u!1 &1214899944
 GameObject:
@@ -404,8 +414,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - {fileID: 11400000, guid: 44957074e69024d4593cf2ecab31db17, type: 2}
   - {fileID: 11400000, guid: 40cc59a0db49fb54dadf79665f5a680f, type: 2}
+  - {fileID: 11400000, guid: 44957074e69024d4593cf2ecab31db17, type: 2}
   - {fileID: 11400000, guid: 586990e763f2aec4d85cbdbe53c2a6be, type: 2}
 --- !u!4 &1214899946
 Transform:
@@ -422,3 +432,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1407145967 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7314442837059377103, guid: df136d5b5e845e743a5e1dcb62c850a9, type: 3}
+  m_PrefabInstance: {fileID: 995240645}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1407145972
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407145967}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1407145973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407145967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab30ad6b62f20e144acadfe96a22fa3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 10
