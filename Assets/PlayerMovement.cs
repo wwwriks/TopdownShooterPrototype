@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameObject characterFace = null;
     [SerializeField] private PlayerAimCrosshair aim;
     [SerializeField] private Camera camera;
+    [SerializeField] private Material mat;
 
     private void Update()
     {

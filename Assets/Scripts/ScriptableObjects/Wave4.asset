@@ -34,4 +34,4 @@ MonoBehaviour:
   - {fileID: 1541478177085133293, guid: 9d8bf73ca589ba742816ae14e3e86a35, type: 3}
   - {fileID: 1541478177085133293, guid: f0f18d20aefbce745b8a5bb8ade573c6, type: 3}
   SpawnDelay: 0.2
-  WaveDelay: 6
+  WaveDelay: 8
