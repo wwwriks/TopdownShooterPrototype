@@ -303,11 +303,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   speedSmoothing: 0.75
-  bounds: {x: 5, y: 3.5}
+  bounds: {x: 10, y: 5}
   rotationSpeed: 5
   characterFace: {fileID: 7314442837059377103}
   aim: {fileID: 6038050049934669185}
   camera: {fileID: 0}
+  mat: {fileID: 2100000, guid: 038f05095fa9a6241a68a7de91559877, type: 2}
 --- !u!1 &6915541318144172280
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,6 +395,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3975418647413440553}
   - component: {fileID: 7573221400341695061}
+  - component: {fileID: 4564589670498624307}
+  - component: {fileID: 4775636466248326532}
   m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
@@ -437,6 +440,46 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2.2073202, z: 1}
   m_Center: {x: 0, y: -0.14150399, z: 0}
+--- !u!114 &4564589670498624307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7314442837059377103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab30ad6b62f20e144acadfe96a22fa3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 10
+--- !u!54 &4775636466248326532
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7314442837059377103}
+  serializedVersion: 4
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8668993593248036115
 GameObject:
   m_ObjectHideFlags: 0
