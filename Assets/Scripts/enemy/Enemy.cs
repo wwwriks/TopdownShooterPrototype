@@ -19,6 +19,8 @@ public class Enemy : MonoBehaviour, IBehaviour
     public float MovementSpeed = 1.0f;
     public int Health = 10;
 
+    [SerializeField] private GameObject _explosion;
+
     private void Awake()
     {
         SpawnPos = transform;
@@ -33,7 +35,10 @@ public class Enemy : MonoBehaviour, IBehaviour
         player?.TakeDamage();
     }
 
-    protected virtual void OnDeath(){}
+    protected virtual void OnDeath()
+    {
+        Instantiate(_explosion, transform.position, Quaternion.identity);
+    }
 
     public void TakeDamage()
     {

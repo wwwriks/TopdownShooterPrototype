@@ -122,5 +122,7 @@ MonoBehaviour:
   EndPos: {fileID: 0}
   PlayerPos: {fileID: 0}
   Bullet: {fileID: 3271006255940074787, guid: 41cbb0c1637dbc74ea16d4fe981d1bc5, type: 3}
+  Invincible: 0
   MovementSpeed: 3
   Health: 10
+  _explosion: {fileID: 2764566448331152429, guid: 55607539da00f3744b8bab80c70f3785, type: 3}
