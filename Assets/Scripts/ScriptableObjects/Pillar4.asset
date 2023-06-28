@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13bfe93268ab4ad4d8c92e61f6c85bf2, type: 3}
-  m_Name: Pillar1
+  m_Name: Pillar4
   m_EditorClassIdentifier: 
   Enemies:
   - {fileID: 2162191094492361672, guid: 536f1d85f7c70dd4b9eab5a1d8bcf259, type: 3}
+  - {fileID: 2162191094492361672, guid: 536f1d85f7c70dd4b9eab5a1d8bcf259, type: 3}
   SpawnPos:
   - {fileID: 8921410204272207250, guid: 9a6c3fd2927a1144db3fbbf49fb4f32f, type: 3}
+  - {fileID: 8921410204272207250, guid: 93d224f4364b536488b00a3ab19131f3, type: 3}
   EndPos:
   - {fileID: 8921410204272207250, guid: ff57323d82f2baf44976b8b88bcb9e3f, type: 3}
+  - {fileID: 8921410204272207250, guid: ba947c126ffaa7940a251f5b9ef448dc, type: 3}
   SpawnDelay: 0
   WaveDelay: 0

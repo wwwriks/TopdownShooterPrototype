@@ -126,5 +126,5 @@ MonoBehaviour:
   Bullet: {fileID: 0}
   Invincible: 0
   MovementSpeed: 10
-  Health: 20
+  Health: 15
   _explosion: {fileID: 2764566448331152429, guid: 55607539da00f3744b8bab80c70f3785, type: 3}
