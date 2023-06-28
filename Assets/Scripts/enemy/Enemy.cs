@@ -43,7 +43,7 @@ public class Enemy : MonoBehaviour, IBehaviour
     public void TakeDamage()
     {
         if (Invincible) return;
-        Debug.Log(Health);
+        // Debug.Log(Health);
         Health--;
         if (Health <= 0)
         {

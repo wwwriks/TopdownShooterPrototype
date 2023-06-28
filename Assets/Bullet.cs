@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public GameObject Explosion;
     [SerializeField] private float speed = 5;
     private float timer;
 
@@ -16,13 +17,14 @@ public class Bullet : MonoBehaviour
     {
         transform.position += transform.forward * speed * Time.deltaTime;
         timer += Time.deltaTime;
-        if (timer > 4.0f) Destroy(this.gameObject);
+        if (timer > 1.0f) Destroy(this.gameObject);
     }
 
     private void OnTriggerEnter(Collider collision)
     {
         Enemy enemy = collision.transform.GetComponent<Enemy>();
         enemy?.TakeDamage();
+        Instantiate(Explosion, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }

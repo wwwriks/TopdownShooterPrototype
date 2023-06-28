@@ -151,6 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63a11e87c94302847a51f6449ab030e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Explosion: {fileID: 2764566448331152429, guid: 55607539da00f3744b8bab80c70f3785, type: 3}
   speed: 100
 --- !u!54 &463141593706706392
 Rigidbody:
