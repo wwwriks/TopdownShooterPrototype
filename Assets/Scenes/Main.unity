@@ -468,6 +468,10 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 619897576}
+    - target: {fileID: 6471570253074836290, guid: df136d5b5e845e743a5e1dcb62c850a9, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 7573221400341695061, guid: df136d5b5e845e743a5e1dcb62c850a9, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -561,6 +565,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5222b4a478cd4b04a945496c572b0413, type: 2}
   - {fileID: 11400000, guid: b3f9471144b9de140a34266155f4512d, type: 2}
   - {fileID: 11400000, guid: 9521ecac096a5394e9add0a014565c10, type: 2}
+  - {fileID: 11400000, guid: f884ec0b8258ef74eb77a2eccbc18ec3, type: 2}
+  - {fileID: 11400000, guid: f884ec0b8258ef74eb77a2eccbc18ec3, type: 2}
+  - {fileID: 11400000, guid: f884ec0b8258ef74eb77a2eccbc18ec3, type: 2}
+  - {fileID: 11400000, guid: f884ec0b8258ef74eb77a2eccbc18ec3, type: 2}
   - {fileID: 11400000, guid: 586990e763f2aec4d85cbdbe53c2a6be, type: 2}
 --- !u!4 &1214899946
 Transform:

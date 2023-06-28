@@ -14,6 +14,6 @@ public class Boss : Enemy
     }
     protected override void OnDeath()
     {
-        SceneManager.LoadScene("End");
+        SceneManager.LoadScene("Win");
     }
 }

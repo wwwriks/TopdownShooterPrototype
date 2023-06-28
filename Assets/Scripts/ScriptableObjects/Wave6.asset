@@ -22,7 +22,7 @@ MonoBehaviour:
   - {fileID: 7785958504625677863, guid: 3a18e6114d476c24eb88154e8efc0c0d, type: 3}
   EndPos:
   - {fileID: 3015315365188649070, guid: ab5f397edb01aa644b1a3625d47dc8d3, type: 3}
-  - {fileID: 3154312371372911799, guid: 8465a384dcd4e1047822b47c84543bd6, type: 3}
-  - {fileID: 1541478177085133293, guid: 9d8bf73ca589ba742816ae14e3e86a35, type: 3}
+  - {fileID: 3154312371372911799, guid: a4e4350da125d1d47b5de75510c761bc, type: 3}
+  - {fileID: 1541478177085133293, guid: f0f18d20aefbce745b8a5bb8ade573c6, type: 3}
   SpawnDelay: 0.3
   WaveDelay: 4
